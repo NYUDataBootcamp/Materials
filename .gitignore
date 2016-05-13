@@ -1,0 +1,78 @@
+## Local tweaks
+Current/
+Pix/
+Logistics/
+Miscellaneous/
+Launch/
+Code/Temp
+Code/csv 
+*.ini 
+
+## Potentially large files 
+*.zip
+*.csv 
+*.xls
+*.xlsx
+*.exe 
+
+.dropbox
+.dropbox.attr
+.ini
+*.sqlite
+.ipynb_checkpoints/
+
+Related_courses/
+Grants/
+Junk/
+Media/
+Background_materials/
+Logistics/
+Other_courses/
+Code/Lab/*.pdf
+Code/Answers
+
+## Video and images 
+*.mp4
+*.mov
+*.png
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+
+## Intermediate documents:
+*.dvi
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.bak
+*.sav
+*.synctex.gz(busy)
+*.pdfsync
+*.tex.bak
+*.tex.sav
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Compiled python files:
+*.pyc
+Code/IPython/.ipynb_checkpoints/
+
+## website
+website/public/
+node_modules/
+*.sublime-project
+*.sublime-workspace
