@@ -1,0 +1,258 @@
+\documentclass[11pt]{article}
+
+\input{../LaTeX/preamble.tex}
+
+% document starts here
+\begin{document}
+\parskip=\bigskipamount
+\parindent=0.0in
+\thispagestyle{empty}
+\input{../LaTeX/header.tex}
+
+\bigskip\bigskip
+\centerline{\Large \bf Data Bootcamp:  Project Examples}
+\centerline{Revised: \today}
+
+\medskip
+{\it As always, the pdf of this document comes with links.}
+
+%\medskip
+If you're having trouble finding a project idea, here are some you could use or adapt.
+Feel free to modify them in any way you find interesting.
+
+
+\section*{Prepackaged projects}
+
+These are relatively well defined projects that extend things we've done in class.
+%
+\begin{itemize}
+\item {\bf Demographics.\/} Delve deeper into the population dynamics of a country
+you find interesting, or compare two or three countries.
+You could start with our
+\href{https://github.com/DaveBackus/Data_Bootcamp/blob/master/Code/Lab/UN_demography.ipynb}
+{demography notebook},
+where we explore UN data on
+the age distribution of the population, life expectancy, mortality (deaths), and fertility (births).
+
+One example:  Look at the data for China, see where it leads you.
+
+Another one:  Anne Case and Angus Deaton generated a lot of discussion,
+and some controversy, when they documented an increase in mortality of middle-aged white men in the US
+and their causes of death, including suicide and drug overdose.
+Links:
+\href{http://www.nytimes.com/2015/11/03/health/death-rates-rising-for-middle-aged-white-americans-study-finds.html}
+    {New York Times},
+\href{http://www.nytimes.com/2015/11/07/upshot/more-details-on-rising-mortality-among-middle-aged-whites.html}
+    {more Times},
+\href{http://www.pnas.org/content/112/49/15078.full.pdf}{Case-Deaton paper} (look at the graphs),
+\href{http://andrewgelman.com/wp-content/uploads/2017/04/ageadj.pdf}{Gelman-Auerbach paper} (ditto).
+Can you reproduce their work?  Extend it?  Take it in a different direction?
+
+\item {\bf Current economic conditions.\/}  Describe current business conditions in the US.
+(Most banks produce this kind of thing, you should be able to find examples.)
+This might include:
+\begin{itemize}
+\item A list of indicators and why you think they're useful.
+\item An assessment of the indicators:  either the correlation with industrial production
+or some other quantitative measure of how closely it tracks the economy.
+\item A summary of what your indicators overall suggest about the current state
+of the US economy.
+\end{itemize}
+Chapter 11 of the \href{(http://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/centers-of-research/global-economy-business/development-initiatives/global-economy-course}
+{Global Economy book} has a nice overview of what's involved
+and FRED codes for some popular indicators.
+You can find more indicators --- and descriptions ---
+on the
+\href{http://www.bloomberg.com/markets/economic-calendar}{Bloomberg economic calendar}.
+
+A variant:  come up with a cool graphic.  We tried a heatmap, but it didn't wow us.
+Another idea is a radar chart, like
+\href{https://www.frbatlanta.org/chcs/labormarket/}{this one} from the Atlanta Fed.
+This requires some serious coding, but the results would be striking.
+
+\item {\bf Emerging market opportunities.\/}  An assessment of
+(long-term) business conditions
+in emerging market economies.
+Here are a couple examples from the Global Economy course:
+\href {https://github.com/DaveBackus/Global_Economy/blob/master/Cases/case_foxconn.pdf}
+    {Foxconn's Next Frontier}
+and \href
+    {https://github.com/DaveBackus/Global_Economy/blob/master/Cases/case_ghana.pdf}
+    {Opportunity in Ghana}.
+In each one, we take a business proposition (start business X)
+and assess the relevant aspects of the business climate in two or three countries.
+The World Bank's
+\href{http://blogs.worldbank.org/opendata/}{Open Data Blog} is a good source of
+similar policy-related ideas.
+
+
+Key data sources for this kind of work:
+\begin{itemize}
+\item The World Bank's \href{http://data.worldbank.org/}{Open Data Portal} is a good place
+to start.  A large collection of social, political and economic data for a broad
+range of countries.
+
+\item The World Bank also has (separate) databases related to
+\href{http://www.doingbusiness.org/}{Doing Business}
+and
+\href{http://info.worldbank.org/governance/wgi/index.aspx#home}
+{Governance Indicators}.
+
+\item The \href{http://www.rug.nl/research/ggdc/data/pwt/}{Penn World Table}
+has data on GDP, employment and hours worked,
+and capital.
+
+\item The World Economic Forum does not produce its own data,
+but their
+\href{http://reports.weforum.org/global-competitiveness-report-2015-2016/}
+{Global Competitiveness Report}
+has a good summary of information from other sources.
+\end{itemize}
+
+\end{itemize}
+
+
+\section*{Random ideas}
+
+All of these need some work, but they seem promising to us:
+\begin{itemize}
+\item {\bf Energy prices.\/}
+They've dropped a lot, but where will they go from here?  We can think of this in terms of supply and demand.  Demand depends primarily on growth:  higher growth means higher demand.  If China grows more slowly, they’ll demand less.  Supply depends on available resources and technologies to develop new sources --- fracking, for example.  These links focus on supply, which seems to be the central issue right now:
+\href{http://ftalphaville.ft.com/2015/09/11/2139891/oil-absolutely-friggin-everywhere/}{Alphaville},
+\href{http://econbrowser.com/archives/2014/11/a-glut-of-oil}{Econbrowser}.
+
+\item {\bf Carbon and energy intensity.}
+How much energy do countries use?  How much is due to GDP (rich countries use more energy)?  How much to other things?  Can we document the sources of differences in a useful way?  Here are a couple blog posts:
+\href{http://conversableeconomist.blogspot.com/2015/07/global-carbon-intensity-rises-kaya.html}
+{Conversable},
+\href{http://econbrowser.com/archives/2014/06/energy-demand-and-gdp}{Econbrowser}.
+
+\item {\bf How people spend their time.}
+The American Time Use Study (ATUS) tells us how people spend every hour of the day.  You can imagine marketing interest in how much time people spend watching TV, accessing the internet, etc.  Many other countries have similar data.  Links:
+\href{http://scholar.princeton.edu/sites/default/files/annurev-economics-111809-125129_0.pdf}{survey},
+\href{http://www.adweek.com/socialtimes/time-spent-online/613474}{Adweek}, \href{http://www.businessinsider.com/how-much-time-people-spend-online-2013-10}{Business Insider} \href{http://www.nber.org/papers/w19549}{academic paper}, \href{http://www.nielsen.com/us/en/insights/news/2014/whats-empowering-the-new-digital-consumer.html}
+{Nielsen}.
+
+\item {\bf Hong Kong/Shanghai share prices (``Hang Seng AH Premium'').}
+Shares of some of the same companies are traded in both locations, but at different prices.  Document this over time, showing how the discount on HK shares has varied over time.  Why do you think that is?  Some links:
+\href{http://www.hsi.com.hk/HSI-Net/static/revamp/contents/en/dl_centre/factsheets/FS_AHPe.pdf}
+{report 1},
+\href{http://www.hsi.com.hk/HSI-Net/}{report 2},
+\href{http://markets.ft.com/research/Markets/Tearsheets/Summary?s=HSCAHPI:HKG}{FT},
+\href{http://www.moneyandbanking.com/commentary/2015/7/6/chinas-stock-market-boom-and-bust}
+{Schoenholtz}.
+
+\item {\bf Deflation odds.}
+This is moderately technical, but nevertheless interesting.  Inflation-protected government bonds (TIPS) have coupon and principal that are ties to the consumer price index, but there’s a lower bound:  coupon and principal can never go below their issue values.  So if there’s deflation (negative inflation) over the life of the bond, the payments don’t go down.  That gives the bonds an option-like feature that can be used to infer the (risk-adjusted) probability of deflation.  More at the Atlanta Fed:
+\href{http://macroblog.typepad.com/macroblog/2015/09/5-year-deflation-probability-moves-off-zero.html}
+{blog post},
+\href{https://www.frbatlanta.org/research/inflationproject/dp.aspx?d=1&s=blogmb}
+{paper}.
+
+
+
+
+\end{itemize}
+
+
+\section*{Data and package projects}
+
+
+Here the idea is to describe a dataset or a package.
+Why stop there?  Because enough is enough!  But if you do this and still have time
+for more, feel free to keep going.
+And {\bf if you get stuck, ask for help}.
+\begin{itemize}
+
+\item {\bf Describe a package.\/}
+Take a package we haven't used and write a tutorial that explains to others how to install
+and use it.  Some examples that have come up in class:
+
+\begin{itemize}
+\item \href{http://www.crummy.com/software/BeautifulSoup/bs4/doc/}
+{Beautiful Soup} ``scrapes''  websites.
+The term refers to grabbing data that is posted online but not in a user-friendly format.
+We can still grab it with the right tools and a little understanding of the structure
+of websites.
+
+\item \href{http://bokeh.pydata.org/en/latest/docs/gallery.html}{Bokeh} does interactive web graphics.
+Spencer's a big fan.
+One option is to take some graphics we've done in class and redo them in Bokeh,
+illustrating its capabilities.
+
+\item \href{https://github.com/quantopian/zipline}{Zipline} is an
+``algorithmic trading library.''
+
+\item \href{https://github.com/mrjbq7/ta-lib}{TA-lib}
+``performs technical analysis with financial market data.''
+\end{itemize}
+
+
+\item {\bf Describe a dataset.\/}
+Take a dataset you find interesting.  Write code that reads it into Pandas
+and explain to others how the data might be used.
+See the course \href{}{data page}
+for examples.
+If this sounds insufficiently ambitious, keep in mind that some of these datasets
+are pretty complicated.
+
+We have a growing collection of examples, which could serve as your starting point:
+\begin{itemize}
+\item MEPS.  The Medical Expenditure Panel Survey covers medical expenditures for individuals.
+This \href{http://www.nihcm.org/pdf/DataBrief3 Final.pdf}{short report} illustrates its potential.
+Figure 1, specifically, shows that 22 percent of total expenditures come
+from 1 percent of individuals.
+(Think about that for a minute.)
+Brian LeBlanc has reproduced this figure from the raw data in an
+\href{https://github.com/DaveBackus/Data_Bootcamp/blob/master/Code/Lab/MEPS_data_experiment_Brian.ipynb}
+{IPython notebook}.
+
+\item SCF.  The Fed's Survey of Consumer Finances collects data every three to five years
+on household income and (especially) assets and liabilities.
+It's a great resource for things like student loan debt, the wealth distribution,
+and many other things.
+Here's a
+\href{http://www.npr.org/sections/money/2015/08/14/431263285/13-years-of-american-credit-cards-in-one-graph}
+{nice application}
+to credit card debt and interest rates.
+\href{https://github.com/DaveBackus/Data_Bootcamp/blob/master/Code/Lab/SCF_data_experiment_Brian.ipynb}
+{Brian LeBlanc's notebook}
+shows us the Python code.
+
+\item Airbnb.
+Chase likes this collection of \href{http://insideairbnb.com/index.html}{Airbnb data}
+and is trying to figure out what to do with it.  If you have ideas, get in touch.
+
+\item {College Scorecard.}
+The federal government has posted an enormous collection of material online
+about US colleges:  graduation rates, financial aid, salaries after graduation.
+Links:  the \href{https://collegescorecard.ed.gov/data/}{data page},
+a \href{http://fivethirtyeight.com/features/shut-up-about-harvard/}{538 piece} using the data, 
+a \href{https://github.com/DaveBackus/Data_Bootcamp/blob/master/Code/Lab/College_Scorecard_data_input.py}
+{Python program} to read in one of the datasets,
+and a \href{http://www.vox.com/2015/9/12/9314695/college-scorecard-earnings}{readable overview}.
+
+\end{itemize}
+
+If you have your own ideas, all the better.
+Or skim the programs in our
+\href{https://docs.google.com/document/d/1L2ZDKFyyqfOrCGbNcCIE9mmgap4tjkTNuw32hK4c6BI/edit?usp=sharing}
+{sources and apps} collection.
+Or our
+\href{https://github.com/DaveBackus/Data_Bootcamp/tree/master/Code/Lab}{Lab directory}.
+(Some of them are works in progress.)
+
+
+\begin{comment}
+\item {\bf IPython notebook of data input chapter.\/}
+Create a notebook that goes through the material of the data input chapter of the book,
+or perhaps one of the other early chapters.
+The result should be a notebook that allows others to teach themselves.
+Include blank cells for exercises.
+\end{comment}
+\end{itemize}
+
+
+\input{../LaTeX/footer.tex}
+
+\end{document}

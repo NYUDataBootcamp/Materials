@@ -1,0 +1,344 @@
+\documentclass[11pt]{exam}
+
+\input{../LaTeX/preamble.tex}
+
+%\printanswers
+
+% document starts here
+\begin{document}
+\parskip=\bigskipamount
+\parindent=0.0in
+\thispagestyle{empty}
+\input{../../LaTeX/header.tex}
+
+\bigskip\bigskip
+\centerline{\Large \bf Data Bootcamp:  Code Practice \#2}
+\centerline{Revised: \today}
+
+\medskip
+{\it Answer each of the questions below.
+What you hand in can be code or handwritten or something else,
+but it must be readable and professional.
+Hardcopy only.}
+
+\begin{solution}
+Most of these questions answer themselves:  you run the code,
+see what happens.  We add short answers for the others.
+\end{solution}
+
+\begin{comment}
+x = True
+x*1
+int(x) 
+float(x) 
+\end{comment} 
+
+\begin{questions}
+\item {\it Review.\/} Does this code run without error? If so, what does it produce?  If not, explain why.
+\begin{verbatim}
+x = [1, 2, 3]
+y = 'bootcamp'
+z = x + y
+\end{verbatim}
+
+\begin{solution}
+It produces a {\tt TypeError}:  We can't add a string and a list.
+\end{solution}
+
+\item {\it Review.\/} For the same {\tt x} and {\tt y} as the previous question:
+What function tells us what type they are?
+What function tells us how many elements they contain?
+
+\begin{solution}
+{\tt type()} gives us the type, {\tt len()} gives us the ``length.''
+\end{solution}
+
+%\item {\it Review.\/} Does this code run without error? If so, what does it produce?  If not, explain why.
+%\begin{verbatim}
+%x = [1, 2, 3]
+%y = [4]
+%z = x + y
+%\end{verbatim}
+
+%\item (Review) What is the value of \texttt{y} after running the code below?
+%\begin{verbatim}
+%x = [1]
+%y = x
+%x.append(2)
+%y = y.pop()
+%\end{verbatim}
+
+% Logical Questions
+\item What type is each expression?  How can you tell?
+\begin{verbatim}
+2
+'2'
+2.0
+"2.0"
+2>1
+'Itamar' > 'Chase'
+[1, 2]
+(1, 2)
+{1: 'one', 2: 'two'}
+\end{verbatim}
+
+\item What value does each of these comparisons have?
+\begin{verbatim}
+1>=0
+1 >= 1
+1 > 1
+1==1
+1 == 1.0
+'Spencer' == "Spencer"
+2**3 > 3**2
+1 >= 0 or 1 <= 2
+1 >= 0 and 1 <= 2
+\end{verbatim}
+
+\item  Does this code run without error?  If so, what does it produce?  If not, how would you fix it?
+\begin{verbatim}
+if 2>1
+   print('Yes, 2 is still greater than 1')
+\end{verbatim}
+
+\begin{solution}
+The first line is missing the colon (:), the second must be indented four spaces.
+\end{solution}
+
+\needspace{2\baselineskip}
+\item What is the result of running this code?  Why?
+\begin{verbatim}
+if True:
+    print('on the one hand')
+else:
+    print('but on the other hand')
+\end{verbatim}
+What happens if we replace {\tt True} with {\tt False} in the first line?
+What happens if we insert the word {\tt not} after {\tt if} in the first line?
+
+\item What is the result of running this code?
+\begin{verbatim}
+cond = True
+if cond:
+    x = "Chase"
+else:
+    x = "Dave"
+print(x)
+\end{verbatim}
+
+\item Suppose we have two lists,
+{\tt x = [1, 2, 3, 4]} and \verb|y = ['x', 'y', 'z']|.
+Adapt the code below to determine which has more elements:
+\begin{verbatim}
+if <insert expression>:
+    print('x has more')
+else:
+    print("y has at least as many")
+\end{verbatim}
+
+\begin{solution}
+The expression is \verb|len(x) > len(y)|.
+\end{solution}
+
+
+% Slicing
+\item Explain in words what slicing does.
+
+\item How would you extract (``slice'') the first element (the integer {\tt 1}) from the list {\tt x} below?
+The last element?  All but the last element?
+\begin{verbatim}
+x = [1, 2, 3, 4, 5]
+\end{verbatim}
+
+\begin{solution}
+First:  {\tt x[0]}.  Last:  {\tt x[-1]}.  All but the last:  {\tt x[0:4] = x[0:-1]}.
+\end{solution}
+
+
+\item Use slicing to extract each word from
+\begin{verbatim}
+sentence = 'This is a sentence; please slice it.'
+\end{verbatim}
+{\it Suggestion:\/} Number every character in {\tt sentence} by hand.
+
+
+\item Consider the list
+\begin{verbatim}
+x = [1, 2, "a", 'b', "fast", 'slow', 3, "Raghu", 'Liuren', 10]
+\end{verbatim}
+\begin{parts}
+\item How would you slice out the first item?  The last item?
+\item How would you slice out the items from {\tt 'b'} to {\tt 3} inclusive?
+\end{parts}
+
+\begin{solution}
+(b) {\tt x[3:7]}.
+\end{solution}
+
+\item Using the same list {\tt x}, write a loop that prints every element on a new line.
+
+\begin{solution}
+\begin{verbatim}
+for item in x:
+    print(x)
+\end{verbatim}
+\end{solution}
+
+\item {\it Challenging.\/}
+Using the same list {\tt x}, write a loop that prints every element of type {\tt str}.
+
+\begin{solution}
+\begin{verbatim}
+for item in x:
+    if type(item) == str:
+        print(item)
+\end{verbatim}
+\end{solution}
+
+
+\item Use Spyder's help to find out what the range function does.
+How would you describe {\tt range(3,12,2)}?
+Verify by converting to a list with {\tt list(range(3,12,2))}.
+
+\item {\it Challenging.\/}
+Write a loop that sums the integers from zero to thirty that are multiples of three:
+3, 6, etc.
+
+\begin{solution}
+\begin{verbatim}
+total = 0
+for num in range(0,31,3):
+    total = total + num
+\end{verbatim}
+\end{solution}
+
+% Looping
+%\item Finish writing the for loop below so that it adds all of the numbers less than 100.
+%\begin{verbatim}
+%x = 0
+%for i in :
+%    x += i
+%    print(x)
+%\end{verbatim}
+
+\begin{comment}
+\item Suppose the current price of corn is \$1.20.
+The price is set to increase by 10 cents every weekday until it hits \$2.50.
+(Nothing happens on weekends.)
+At that point it will switch directions and decrease by 10 cents a day.
+Finish the code below to print the price of corn every day until it reaches \$2.50.
+\begin{verbatim}
+days = ["M", "T", "W", "Th", "F"]
+starting_price = 1.20
+current_price = starting_price
+while True:
+for day in days:
+    current_price = current_price + 0.10
+    print("The price on ", day, "is ", current_price)
+if current_price == 2.50:
+    break
+\end{verbatim}
+\end{comment}
+
+
+%% Functions
+%\item Define a function that takes your birth year and the current year as inputs
+%and prints every year in between (and including) those years.
+
+
+%\item A function is defined below. Determine what it does and write an example of you using it.
+%\begin{verbatim}
+%def score_to_percentage(pointsawarded, pointstotal):
+%    """
+%    This function changes a number of points awarded
+%    and a number of total points into a percentage
+%    """
+%    percentage = pointsawarded / pointstotal
+%    return percentage
+%\end{verbatim}
+
+%\item {\it Challenging.\/}
+%Create a function to convert a date tuple to a regular date:
+%to convert (say) \texttt{(2015, 8, 22)} to \texttt{August 22, 2015} expressed as a string.
+%That is:  The input is a tuple and the return is a string.
+%{\it Suggestion:\/} You might want to use the list
+%\begin{verbatim}
+%months = ['January', 'February', etc]
+%\end{verbatim}
+
+\item Define a function \verb|pocket_change()| that takes four integers as inputs
+(numbers of pennies, nickels, dimes, and quarters in your pocket)
+and returns a floating point number (their dollar value).
+Run your program with the input {\tt (1, 2, 3, 4)}.
+{\it Bonus (optional):} Report the value with a dollar sign.
+
+\begin{solution}
+\begin{verbatim}
+def pocket_change(pennies, nickels, dimes, quarters):
+    value = pennies + 5*nickels + 10*dimes + 25*quarters
+    return value/100
+
+v = pocket_change(1, 2, 3, 4)
+print('$' + str(v))
+\end{verbatim}
+\end{solution}
+
+
+\item {\it Challenging.\/}
+Write a function {\tt notsix()} that takes a list of integers
+and returns a (shorter) list of only those that do not begin with a 6.
+Test it on the list {\tt [1234, 6783, 6, 4321, 9876]}.
+{\it Hints:}  You can create a blank list with {\tt x = []}.
+You can append  {\tt item} to it with {\tt x.append(item)}.
+
+\begin{solution}
+\begin{verbatim}
+def notsix(numlist):
+    newlist = []
+    for num in numlist:
+        numstr = str(num)
+        if numstr[0] != '6':
+            newlist.append(num)
+    return newlist
+
+notsix([1234, 6783, 6, 4321, 9876])
+\end{verbatim}
+\end{solution}
+
+
+\needspace{2\baselineskip}
+\item {\it Challenging.\/}
+ Explain what this code does:
+\begin{verbatim}
+old_list = [1234, 6783, 6, 4321, 9876]
+new_list = [x for x in old_list if str(x)[0] != "6"]
+\end{verbatim}
+
+\item Consider the Python object
+\begin{verbatim}
+z = {1: 'one', 2: 'two', 3: 'three'}
+\end{verbatim}
+\begin{parts}
+\item What kind of object is {\tt z}?  What is its length?
+\item Which components are keys?  Which are values?
+\item How would I get the value associated with the key 2?
+\item Use Spyder's help facilities to figure out what {\tt z.keys()} does.
+Ditto {\tt z.values()}.  Try them to verify.
+\item What does {\tt list(z.keys())} do?
+\item What does {\tt list(z.values())} do?
+\item What does {\tt list(z)} do?
+\end{parts}
+
+\begin{solution}
+(c) \verb|z[2]|.  (Looks a lot like slicing, but we use the key rather than the location.)
+(d,e,f,g) These extract the keys or values and convert them to lists.
+\end{solution}
+
+
+\item Approximately how long did this assignment take you?
+
+\end{questions}
+
+\input{../LaTeX/footer.tex}
+
+\end{document}
