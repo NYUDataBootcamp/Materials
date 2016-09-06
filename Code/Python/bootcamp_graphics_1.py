@@ -10,7 +10,7 @@ Graphics inherently complicated, see these options to get a sense:
 http://matplotlib.org/users/customizing.html
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Written by Dave Backus, August 2015
 Created with Python 3.5

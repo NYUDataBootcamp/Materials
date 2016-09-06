@@ -4,8 +4,8 @@ Pandas advanced tools for Data Bootcamp course.
 Topics:  reading csv and xls files, properties of dataframes.
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp
-* https://github.com/DaveBackus/Data_Bootcamp/Code/Python
+* https://github.com/NYUDataBootcamp/Materials
+* https://github.com/NYUDataBootcamp/Materials/Code/Python
 
 Written by Dave Backus, August 2015
 Created with Python 3.4
@@ -123,8 +123,8 @@ most are for the WDI, which is way too big and takes too long
 # copy file from url to hard drive
 import urllib.request           # this is a module from the package urllib
 file = 'foo.csv'
-url1 = 'https://raw.githubusercontent.com/DaveBackus/Data_Bootcamp/master/'
-url2 = 'Code/Data/test1.csv'
+url1 = 'https://raw.githubusercontent.com/NYUDataBootcamp/Materials/master/'
+url2 = 'Data/test.csv'
 url = url1 + url2
 urllib.request.urlretrieve(url, file)
 

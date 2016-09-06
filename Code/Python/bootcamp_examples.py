@@ -7,7 +7,7 @@ off the web access tools into a new package.
 http://pandas.pydata.org/pandas-docs/stable/remote_data.html
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Written by Dave Backus, November 2015
 Created with Python 3.5
