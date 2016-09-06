@@ -5,7 +5,7 @@ Topics:  calculations, assignments, strings, slicing, lists, data frames,
 reading csv and xls files
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Written by Dave Backus, Sarah Beckett-Hile, and Glenn Okun
 Created with Python 3.4
@@ -124,7 +124,7 @@ print(['row labels', df.index])
 
 #%%
 # read from url
-url = 'https://raw.githubusercontent.com/DaveBackus/Data_Bootcamp/master/Code/Data/test1.csv'
+url = 'https://raw.githubusercontent.com/NYUDataBootcamp/Materials/master/Data/test1.csv'
 dfurl = pd.read_csv(url)
 
 
@@ -149,7 +149,7 @@ weo_sub.to_csv('weo.csv')
 # copy file from url to hard drive
 import urllib.request           # this is a module from the package urllib
 file = 'foo.csv'
-url = 'https://raw.githubusercontent.com/DaveBackus/Data_Bootcamp/master/Code/Data/test1.csv'
+url = 'https://raw.githubusercontent.com/NYUDataBootcamp/Materials/master/Data/test1.csv'
 urllib.request.urlretrieve(url, file)
 
 #%%

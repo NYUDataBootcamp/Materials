@@ -16,17 +16,17 @@ The **[Data Bootcamp course](http://databootcamp.nyuecon.com/)** will **NOT** co
 
 You can find more information about the course on the **[course website](http://databootcamp.nyuecon.com/)**.  If you have questions, **email Dave Backus** (db3@nyu.edu) or track him down in his office (KMC 7-68) or at the Malt House.  
 
-#### Related information 
+#### Related information
 
 **Related courses.** Several students have asked how Data Bootcamp compares to other courses with significant programming content.  I've put together [a list](https://github.com/DaveBackus/Data_Bootcamp/blob/master/Markdown/related_courses.md#related-courses), but I recommend you ask around.  Data Bootcamp does two things that are unusual:  it's newbie-friendly, and there's a strong emphasis on data.  The latter strikes me as important, in the sense that when you learn to program, it's helpful to have a purpose in mind.  Ours is to collect and manage data.  
 
-**Suggestions welcome.**  Post them at the "Issues" link at the top (look for the exclamation point in a circle) or email Dave Backus at NYU:  db3@nyu.edu. Thanks in advance. 
+**Suggestions welcome.**  Post them at the "Issues" link at the top (look for the exclamation point in a circle) or email us at nyu.databootcamp@gmail.com. Thanks in advance. ([all open issues](https://github.com/issues?q=is%3Aopen+user%3ANYUDataBootcamp))
 
 **Licensing.** We encourage others to use this material and to acknowledge such use.
-Here's [the boilerplate](https://github.com/DaveBackus/Data_Bootcamp/blob/master/LICENSE.md).
-On the off chance this crossed your mind, here's 
+Here's [the boilerplate](https://github.com/NYUDataBootcamp/Materials/blob/master/LICENSE.md).
+On the off chance this crossed your mind, here's
 [Richard Stallman's take](http://www.newyorker.com/business/currency/the-gnu-manifesto-turns-thirty) on the license, which allows commercial development.  
 
-Part of the #nyuecon collection at NYU's Stern School of Business. 
+Part of the #nyuecon collection at NYU's Stern School of Business.
 
 Another product of the #nyuecon Python factory @ NYU Stern.

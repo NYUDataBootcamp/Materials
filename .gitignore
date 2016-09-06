@@ -10,9 +10,6 @@ Code/csv
 
 ## Potentially large files 
 *.zip
-*.csv 
-*.xls
-*.xlsx
 *.exe 
 
 .dropbox

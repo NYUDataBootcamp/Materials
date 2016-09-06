@@ -4,7 +4,7 @@ For Class #3 of an informal mini-course at NYU Stern, Fall 2014.
 Topics:  pandas data management
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Prepared by Dave Backus, Sarah Beckett-Hile, and Glenn Okun
 Created with Python 3.4
