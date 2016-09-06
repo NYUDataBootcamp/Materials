@@ -20,7 +20,7 @@ You can find more information about the course on the **[course website](http://
 
 **Related courses.** Several students have asked how Data Bootcamp compares to other courses with significant programming content.  I've put together [a list](https://github.com/DaveBackus/Data_Bootcamp/blob/master/Markdown/related_courses.md#related-courses), but I recommend you ask around.  Data Bootcamp does two things that are unusual:  it's newbie-friendly, and there's a strong emphasis on data.  The latter strikes me as important, in the sense that when you learn to program, it's helpful to have a purpose in mind.  Ours is to collect and manage data.  
 
-**Suggestions welcome.**  Post them at the "Issues" link at the top (look for the exclamation point in a circle) or email Dave Backus at NYU:  db3@nyu.edu. Thanks in advance. 
+**Suggestions welcome.**  Post them at the "Issues" link at the top (look for the exclamation point in a circle) or email Dave Backus at NYU:  db3@nyu.edu. Thanks in advance. ([all open issues](https://github.com/issues?q=is%3Aopen+user%3ANYUDataBootcamp))
 
 **Licensing.** We encourage others to use this material and to acknowledge such use.
 Here's [the boilerplate](https://github.com/DaveBackus/Data_Bootcamp/blob/master/LICENSE.md).
