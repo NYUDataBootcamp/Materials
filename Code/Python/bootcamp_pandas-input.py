@@ -3,7 +3,7 @@ Data input with Pandas for Data Bootcamp course.
 
 Course materials
 * http://databootcamp.nyuecon.com/
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Warning:  This is a working file and has some things in it that aren't
 completely debugged.
@@ -18,8 +18,8 @@ The result is a data frame:  like a sheet with row and column labels
 import pandas as pd
 
 # read file from url
-url1 = 'https://raw.githubusercontent.com/DaveBackus'
-url2 = '/Data_Bootcamp/master/Code/Python/test.csv'
+url1 = 'https://raw.githubusercontent.com/NYUDataBootcamp'
+url2 = '/Materials/master/Data/test.csv'
 url  = url1 + url2
 df = pd.read_csv(url)
 

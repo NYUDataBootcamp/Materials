@@ -2,8 +2,8 @@
 Miscellaneous experiments for Data Bootcamp course
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp/
-* https://github.com/DaveBackus/Data_Bootcamp/Code/Python
+* https://github.com/NYUDataBootcamp/Materials/
+* https://github.com/NYUDataBootcamp/Materials/Code/Python
 
 Written by Dave Backus, March 2015
 Created with Python 3.4
@@ -99,8 +99,8 @@ Copying files from internet to hard drive (temp directory)
 """
 import urllib              # handles internet files
 
-url1 = 'https://raw.githubusercontent.com/DaveBackus/Data_Bootcamp/master/'
-url2 = 'Code/Python/test.csv'
+url1 = 'https://raw.githubusercontent.com/NYUDataBootcamp/Materials/master/'
+url2 = 'Data/test.csv'
 url = url1 + url2
 fname = '../' + 'Temp/' + 'goo.csv'
 
@@ -217,8 +217,8 @@ urrlib version of data input from csv
 # copy file from url to hard drive
 import urllib.request
 file = 'foo.csv'
-url1 = 'https://raw.githubusercontent.com/DaveBackus/Data_Bootcamp/master/'
-url2 = 'Code/Data/test1.csv'
+url1 = 'https://raw.githubusercontent.com/NYUDataBootcamp/Materials/master/'
+url2 = 'Data/test.csv'
 url = url1 + url2
 urllib.request.urlretrieve(url, file)
 
@@ -382,4 +382,3 @@ Appendices
 #                   ['Spencer', 5, 6, 7.8]],
 #                   columns=['name', 'x1', 'x2', 'x3'])
 #print('\nurl read (df)\n', df)
-

@@ -7,7 +7,7 @@ Examples are
 * Stock options via Yahoo (not yet)
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Prepared by Dave Backus, Sarah Beckett-Hile, and Glenn Okun
 Created with Python 3.4

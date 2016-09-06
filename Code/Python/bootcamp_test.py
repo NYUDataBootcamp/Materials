@@ -2,8 +2,8 @@
 Test program for Data Bootcamp course.
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp/
-* https://github.com/DaveBackus/Data_Bootcamp/Code/Python
+* https://github.com/NYUDataBootcamp/Materials/
+* https://github.com/NYUDataBootcamp/Materials/Code/Python
 
 Written by Dave Backus, March 2015
 Created with Python 3.4

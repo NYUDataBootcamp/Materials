@@ -4,7 +4,7 @@ For Class #2 of an informal mini-course at NYU Stern, Fall 2014.
 Topic:  reminders, matplotlib graphics
 
 Repository of materials (including this file):
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Written by Dave Backus, Sarah Beckett-Hile, and Glenn Okun
 Created with Python 3.4

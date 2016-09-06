@@ -3,7 +3,7 @@ Data cleaning with Pandas for Data Bootcamp course.
 
 Course materials
 * http://databootcamp.nyuecon.com/
-* https://github.com/DaveBackus/Data_Bootcamp
+* https://github.com/NYUDataBootcamp/Materials
 
 Warning:  This is a working file and has some things in it that aren't
 completely debugged.
