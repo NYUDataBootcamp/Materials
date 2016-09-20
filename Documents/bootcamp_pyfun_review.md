@@ -129,7 +129,7 @@ You will not read the riddle, though you do the best you can do."""
 
 23. Write a function which takes two first names and returns the names in alphabetical order. For example, if `name1 = "Chase"` and `name2 = "Chad"` then the function should return `("Chad", "Chase")`.
 
-24. Take the list of growth rates `g = [0.02, 0.07, 0.08]`. Write a list comprehension that multiplies each element by 100.
+24. Take the list of growth rates `g = [0.02, 0.07, 0.08]`. Write a list comprehension that multiplies each element by 100. Do the same exercise by using a loop and storing them in a new list.
 
-25.
+25. Think about everything we've done so far. If you have questions, raise your hand or write an email to us. ASK QUESTIONS.
 
