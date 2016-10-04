@@ -5,12 +5,11 @@ Course materials
 * http://databootcamp.nyuecon.com/
 * https://github.com/NYUDataBootcamp/Materials
 
-Warning:  This is a working file and has some things in it that aren't
-completely debugged.
-
 Written by Dave Backus, August 2015
 Created with Python 3.4
 """
+
+#%%
 """
 Read csv file from internet (and why we like csv's)
 The result is a data frame:  like a sheet with row and column labels
@@ -26,6 +25,23 @@ df = pd.read_csv(url)
 # if the internet is down
 #df_fromdict = pd.DataFrame({'name': ['Dave', 'Chase', 'Spencer'],
 #            'x1': [1, 4, 5], 'x2': [2, 3, 6], 'x3': [3.5, 4.3, 7.8]})
+
+
+#%%
+
+# windows users only
+# folder = "\C:\Users"  # WILL NOT WORK
+folder = "\\C:\\Users"  # Good
+folder = "/C:/Users"  # Good
+
+
+
+
+
+folder = "/Users/sglyon/Teaching/NYUDataBootcamp/Materials/Data/"
+csv_file = folder + "test.csv"
+df = pd.read_csv(csv_file)
+
 
 #%%
 """
@@ -84,8 +100,24 @@ df538["Median"].plot(kind="barh", figsize=(5, 12))
 
 #%%
 # IMDb movies and parts
+# WARNING: this file is approx 200 MB -- this might take a while
 url  = 'http://pages.stern.nyu.edu/~dbackus/Data/cast.csv'
 cast = pd.read_csv(url, encoding='utf-8')
+
+#%% first 2016 presdidential debate
+# NOTE: data came from here: 
+# https://www.kaggle.com/mrisdal/2016-us-presidential-debates
+url1 = "https://raw.githubusercontent.com/NYUDataBootcamp/Materials/"
+url2 = "master/Data/pres_debate_2016.csv"
+url= url1 + url2
+debate = pd.read_csv(url)
+
+# who spoke more
+trump = debate[debate["Speaker"] == "Trump"]
+clinton = debate[debate["Speaker"] == "Clinton"]
+
+print("Length of Trumps's talking ", len(trump["Text"].sum()))
+print("Length of Clinton's talking ", len(clinton["Text"].sum()))
 
 #%%
 """
