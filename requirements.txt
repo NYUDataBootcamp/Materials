@@ -1,0 +1,6 @@
+pandas_datareader
+seaborn
+plotly
+html5lib
+quandl
+matplotlib
