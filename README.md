@@ -34,3 +34,7 @@ On the off chance this crossed your mind, here's
 Part of the #nyuecon collection at NYU's Stern School of Business.
 
 Another product of the #nyuecon Python factory @ NYU Stern.
+
+#### Contributor information
+
+We run a special pre-commit git hook to clean up the files before we let git commit them. In order to use this you need to move them into place. We have a python script that does this. So **immediately after cloning the repository** run the `setup_hooks.py` file from this directory (e.g. by calling `python setup_hooks.py` from the command line.)
