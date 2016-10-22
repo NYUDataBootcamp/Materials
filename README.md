@@ -4,6 +4,10 @@
 
 A course exploring economic and financial data with Python at NYU's Stern School of Business.  For current information and links to course material, try the **[Data Bootcamp](http://databootcamp.nyuecon.com/)** website.  
 
+To see an interactive preview of some of the contents here, click the my binder button below:
+
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/nyudatabootcamp/materials)
+
 ---
 
 *November 2015.*  We are offering two sections of **[Data Bootcamp](http://databootcamp.nyuecon.com/)** at NYU Stern in **Spring 2016**, one for undergrads (ECON-UB.0232, Tuesday and Thursday, 2-3:15, January 26 to May 10) and one for MBA students (ECON-GB.2313, Wednesday nights, 6-9pm, February 8 to May 9). They are standard for-credit courses at NYU.  
