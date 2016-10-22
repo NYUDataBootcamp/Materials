@@ -4,3 +4,4 @@ plotly
 html5lib
 quandl
 matplotlib
+cufflinks
