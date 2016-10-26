@@ -7,6 +7,9 @@ Course materials
 
 Written by Dave Backus, August 2015
 Created with Python 3.4
+
+Edited by Chase Coleman and Spencer Lyon, October 2016
+Created with Python 3.5
 """
 
 #%%
@@ -35,9 +38,7 @@ folder = "\\C:\\Users"  # Good
 folder = "/C:/Users"  # Good
 
 
-
-
-
+# NEED TO CHANGE TO YOUR OWN PATH HERE
 folder = "/Users/sglyon/Teaching/NYUDataBootcamp/Materials/Data/"
 csv_file = folder + "test.csv"
 df = pd.read_csv(csv_file)
@@ -105,7 +106,7 @@ url  = 'http://pages.stern.nyu.edu/~dbackus/Data/cast.csv'
 cast = pd.read_csv(url, encoding='utf-8')
 
 #%% first 2016 presdidential debate
-# NOTE: data came from here: 
+# NOTE: data came from here:
 # https://www.kaggle.com/mrisdal/2016-us-presidential-debates
 url1 = "https://raw.githubusercontent.com/NYUDataBootcamp/Materials/"
 url2 = "master/Data/pres_debate_2016.csv"
@@ -123,19 +124,19 @@ print("Length of Clinton's talking ", len(clinton["Text"].sum()))
 """
 APIs
 """
-import pandas.io.data as web    # package to access FRED
-import datetime as dt           # package to handle dates
+from pandas_datareader import data  # Package to access FRED
+import datetime as dt               # package to handle dates
 
 start = dt.datetime(2010, 1, 1)  # start date
-codes = ['GDPC1', 'PCECC96']    # real GDP, real consumption
-fred  = web.DataReader(codes, 'fred', start)
-fred = fred/1000                # convert trillions to billions
+codes = ['GDPC1', 'PCECC96']     # real GDP, real consumption
+fred  = data.DataReader(codes, 'fred', start)
+fred = fred/1000                # convert billions to trillions
 
 fred.plot()
 
 #%%
 # World Bank
-from pandas.io import wb            # World Bank api
+from pandas_datareader import wb   # World Bank api
 
 var = ['NY.GDP.PCAP.PP.KD']         # GDP per capita
 iso = ['USA', 'FRA', 'JPN', 'CHN', 'IND', 'BRA', 'MEX']  # country codes
@@ -148,9 +149,9 @@ wbdf.plot(kind='barh')
 
 #%%
 # Fama-French equity returns
-import pandas.io.data as web
+from pandas_datareader import data  # Package to access FF
 
-ff = web.DataReader('F-F_Research_Data_factors', 'famafrench')[0]
+ff = data.DataReader('F-F_Research_Data_factors', 'famafrench')[0]
 ff.columns = ['xsm', 'smb', 'hml', 'rf']      # rename variables
 
 #%%
@@ -162,3 +163,4 @@ data = {'EG.ELC.ACCS.ZS': [53.2, 47.3, 85.4, 22.1],    # access to elec (%)
         'IT.NET.USER.P2': [11.5, 12.9, 41.0, 13.5],    # internet access (%)
         'Country': ['Botswana', 'Namibia', 'South Africa', 'Zambia']}
 af = pd.DataFrame(data)
+
