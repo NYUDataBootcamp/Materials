@@ -22,7 +22,7 @@ def strip_output_cell(fn):
 
     if changed:
         with open(fn, "w") as f:
-            json.dump(js, f)
+            json.dump(js, f, indent=1)
 
 repo_root = os.popen("git rev-parse --show-toplevel").read().strip()
 for dirpath, dirnames, files in os.walk(repo_root):
