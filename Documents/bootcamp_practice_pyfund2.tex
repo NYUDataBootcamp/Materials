@@ -1,0 +1,104 @@
+\documentclass[11pt]{exam}
+
+\input{../LaTeX/preamble.tex}
+
+%\printanswers
+
+
+% document starts here
+\begin{document}
+%\parskip=\bigskipamount
+\parindent=0.0in
+\thispagestyle{empty}
+%\input{../LaTeX/header.tex}
+
+\bigskip\bigskip
+\centerline{\Large \bf Data Bootcamp:  Python Fundamentals 1 Practice}
+\centerline{Revised: \today}
+
+\medskip
+
+\vspace{2cm}
+
+\begin{questions}
+\item Construct a dictionary whose keys are the integers $1$, $2$ and $3$ and whose values are the same numbers as words: one, two, three. How would you get the word associated with the key 2?  
+
+\item What does the built-in function \texttt{zip()} do? Start with the lists
+\begin{verbatim}
+l1 = [1, 2, 3]
+l2 = ['one', 'two', 'three']
+\end{verbatim} 
+\begin{itemize}
+\item Construct the list of tuples \texttt{[(1, 'one'), (2, 'two'), (3, 'three')]}.
+\item Construct a dictionary whose keys are the integers $1$, $2$ and $3$ and whose values are the same numbers as words: one, two, three.  
+\end{itemize}
+
+\item Take the variables \texttt{name1} and \texttt{name2}, both of them strings. Write a program using \texttt{if ... else} that prints the name that comes first in alphabetical order. Test your program with 
+\begin{verbatim}
+name1 = 'Dave'
+name2 = 'Glenn'
+\end{verbatim}
+Could you write a function for this task?
+
+\item Take the list \texttt{stuff = ['cat', 3.7, 5, 'dog']}. 
+\begin{itemize}
+\item Write a program that tells us the type of each elements of \texttt{stuff} (value and type)
+\item Write a program that prints only the elements of \texttt{stuff} that are strings. 
+\end{itemize}
+
+
+\item Write a program that given two integer values \texttt{a} and \texttt{b} returns \texttt{True} if either one is $6$, or if their sum or difference is $6$. \emph{Hint:} you might want to use the built-in function \texttt{abs()}. Test your program with
+\begin{itemize}
+\item \texttt{a=6}, \texttt{b=4} (should get \texttt{True})
+\item \texttt{a=4}, \texttt{b=5} (should get \texttt{False})
+\item \texttt{a=1}, \texttt{b=5} (should get \texttt{True})
+\end{itemize}
+Could you write a function for this task?
+
+
+\item Write a program that given two integers \texttt{a} and \texttt{b} returns their sum. However, sums in the range $[10, 19]$ are forbidden, so in that case just return $20$. Test your program with
+\begin{itemize}
+\item \texttt{a=3}, \texttt{b=4} (should get $7$)
+\item \texttt{a=9}, \texttt{b=4} (should get $20$)
+\item \texttt{a=10}, \texttt{b=11} (should get $21$)
+\end{itemize}
+Could you write a function for this task?
+
+\item Take the list of bond yields \texttt{y = [.01, .02, .03]} for maturities of one, two and three years. Write a program that multiplies all elements with 100, i.e. returns the list 
+\begin{verbatim}
+y_perc = [1.0, 2.0, 3.0]
+\end{verbatim}
+Can you do it with list comprehension? And with a function?
+
+
+\item Using only core \texttt{Python} functionality define a list that contains 
+\begin{itemize}
+\item all integers from 0 to \texttt{n} (test it with the example: \texttt{n=5})
+\item all integers from \texttt{n1} to \texttt{n2} (test it with the example: \texttt{n1=4} and \texttt{n2=8}) 
+\end{itemize}
+Could you define a function that can do both? (\emph{Hint:} use default values)
+
+
+\begin{center}
+\noindent\rule{10cm}{0.4pt}
+\end{center}
+
+\item Suppose that you have two strings
+\begin{verbatim}
+s1 = "abc def ghi"
+s2 = "def ghi abc"
+\end{verbatim}
+\begin{itemize}
+\item How would you check if the two strings contain the same characters? (irrespective of their order)
+\item How would you check if the two strings contain the same words?
+\end{itemize}
+
+\item Take the list \texttt{x = [1, 4, 5, 6, 4, 2, 7, 12, 4, 23, 4]}. Using only loops and/or conditionals create a list with all the indices \texttt{i} for which 
+\texttt{x[i] == 4}.
+
+
+
+\end{questions}
+%\input{../LaTeX/footer.tex}
+
+\end{document}
