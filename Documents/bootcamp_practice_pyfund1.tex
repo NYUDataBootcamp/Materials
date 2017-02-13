@@ -1,0 +1,133 @@
+\documentclass[11pt]{exam}
+
+\input{../LaTeX/preamble.tex}
+
+%\printanswers
+
+
+% document starts here
+\begin{document}
+%\parskip=\bigskipamount
+\parindent=0.0in
+\thispagestyle{empty}
+%\input{../LaTeX/header.tex}
+
+\bigskip\bigskip
+\centerline{\Large \bf Data Bootcamp:  Python Fundamentals 1 Practice}
+\centerline{Revised: \today}
+
+\medskip
+%{\it Answer each of the questions below.
+%Include any code you write.
+%What you hand in can be code or handwritten or something else,
+%but it must be readable and professional.
+%Hardcopy only.}
+\vspace{2cm}
+
+\begin{questions}
+\item Fix this code:
+\begin{verbatim}
+bad_string = 'Sarah's code'
+\end{verbatim}
+
+\item How would you convert the integer i = 1234 to the list 
+\begin{verbatim}
+l = ['1', '2', '3', '4']
+\end{verbatim}
+
+\item Suppose \textbf{year} is a string containing the year of a particular piece of data; for example, 
+\begin{verbatim}
+year = '2016'
+\end{verbatim}
+How would we construct a \emph{string} for the following year?
+
+\item Suppose we have two variables, $x$ and $y$. How would you switch their values, so that $x$ takes on $y$'s value and $y$ takes on $x$'s? 
+
+\item Set 
+\begin{verbatim}
+name = 'Jones'
+\end{verbatim}
+Use (a) tab completion to find a method that coverts \textbf{name} to upper case (capital) letters and (b) the Object inspector to find out how to use that method.
+
+\item Set 
+\begin{verbatim}
+name = 'Ulysses'
+\end{verbatim}
+Use (a) tab completion to find a method that counts the number of appearances of the letter $s$ and (b) the Object inspector to find out how to use that method.
+
+\item Set
+\begin{verbatim}
+long_string = 'salamandroid'
+\end{verbatim}
+Find a method to replace the $a$'s with asterisks.
+
+\item Create the list 
+\begin{verbatim}
+list = [1, 2, 3, 4, 5]
+\end{verbatim}
+and using list methods
+\begin{itemize}
+\item reverse the elements of $l$ and print it
+\item remove the number $4$ from $l$ and print it 
+\item append the float $1.5$ to $l$ and print it
+\item sort the elements of $l$ and print it
+\end{itemize}
+
+
+
+\begin{center}
+\noindent\rule{10cm}{0.4pt}
+\end{center}
+
+\pagebreak 
+
+\item You are given the number (as a string) in the following form
+\begin{verbatim}
+number = "32,054.23"
+\end{verbatim}
+How would you convert this into a valid float? You should get $32054.23$.
+
+
+\item You are given a name of the form 
+\begin{verbatim}
+firstname_lastname = 'john_doe'
+\end{verbatim}
+Save Firstname and Lastname variables with capitalized values using string methods.
+
+\item You are given a list of the form: $l = [0, 1, 2, 4, 5]$. Use methods for lists to produce a corrected list which contains the number $3$ between $2$ and $4$:
+
+\begin{verbatim}
+l = [0, 1, 2, 3, 4, 5]
+\end{verbatim}
+
+\item You are given a list of the form: $l = [\dots, 1, 2, 4, 5, \dots]$ (with an ``unkown'' number of first and last elements). Use methods for lists to produce a corrected list which contains the number $3$ between $2$ and $4$:
+
+\begin{verbatim}
+l = [..., 1, 2, 3, 4, 5, ...]
+\end{verbatim}
+
+\item You are given strings of web domains of the form: $s = $'www.example.com'. You want to strip the \textbf{'www.'} and the \textbf{'.com'}. Use string methods to achieve this.
+
+\item Write a Python program to get the part of the string 
+\begin{verbatim}
+link = 'https://play.spotify.com/collection/albums'
+\end{verbatim}
+before the last '/' character. You should get \begin{verbatim}
+'https://play.spotify.com/collection'
+\end{verbatim}
+
+
+\item \textbf{Hard!} Write a program to swap comma and dot in a string. In particular turn the string
+\begin{verbatim}
+dot_comma = "32.054,23"
+\end{verbatim}
+into
+\begin{verbatim}
+comma_dot = "32,054.23"
+\end{verbatim}
+\emph{Hint:} look up the string methods \textbf{maketrans} and \textbf{translate}.
+\end{questions}
+
+%\input{../LaTeX/footer.tex}
+
+\end{document}
