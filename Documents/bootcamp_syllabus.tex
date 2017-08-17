@@ -1,46 +1,56 @@
-\documentclass[11pt]{article}
+%\documentclass[11pt]{article}
 
-\input{../LaTeX/preamble.tex}
+%%%%%%%%%%%%%%%%%%%%%% Stock Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% document starts here
+\input{../LaTeX/undergrad_preamble.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%Headers and Footers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{\includegraphics[width=0.25\textwidth]{../Figures/stern_black1.pdf}}{}{Data Bootcamp}
+\runningheader{Data Bootcamp}{}{Syllabus: ECON-UB.0011.02}
+\runningfooter{}{}{}
+
 \begin{document}
-\parskip=\bigskipamount
-\parindent=0.0in
-\thispagestyle{empty}
-\input{../LaTeX/header.tex}
+\centerline{\Large\bf Syllabus:  Data Bootcamp}
+\vspace{3mm}
+\centerline{\large\bf ECON-UB.0232 $|$ Fall 2017}
+\vspace{3mm}
+\centerline{\bf Revised:  \today}
 
-\bigskip\bigskip
-\centerline{\Large \bf Data Bootcamp:  Syllabus}
-\centerline{Revised: \today}
-
-
-\section*{Overview}
+\bigskip
+%\vspace{-.25cm}
 
 Data Bootcamp is about nuts and bolts data analysis. You will learn about economic, financial, and business
-data, and enough about computer programming to work with it effectively.
-Applications include some or all of: leading economic indicators; emerging market country indicators;
-bond and equity returns; stock options; education and income; income by zip code; long tail sales data; innovation diffusion curves; and many others.
-We will use Python, a popular high-level computer language that's widely used in finance, consulting,
-technology, and other parts of the business world.
-``High-level'' means it's less painful than most (the hard work is done by the language),
-but it's a serious language with extensive capabilities.
-``Data analysis'' means primarily graphical descriptions that summarize data
-in ways that are helpful and informative.
-``Bootcamp'' is a reminder that expertise takes work. Don't worry, it's worth it.
-{\bf You will be more valuable to current and future employers.\/}
-And you will be able to do more things more efficiently than
-friends who rely on Excel.
+data, and enough about computer programming to work with it effectively. Applications include some or all of: leading economic indicators; emerging market country indicators; bond and equity returns; stock options; education and income; income by zip code; long tail sales data; innovation diffusion curves; and many others.
 
-If you're not convinced --- or even if you are ---
-we have a more elaborate sales pitch on the
-\href{http://nyudatabootcamp.github.io/website/}{course website}.
+We will use Python, a popular high-level computer language that's widely used in finance, consulting,
+technology, and other parts of the business world. ``High-level'' means it's less painful than most (the hard work is done by the language), but it's a serious language with extensive capabilities.
+
+``Data analysis'' means primarily graphical descriptions that summarize data
+in ways that are helpful and informative. ``Bootcamp'' is a reminder that expertise takes work. Don't worry, it's worth it. {\bf You will be more valuable to current and future employers.\/} And you will be able to do more things more efficiently than friends who rely on Excel.
+
+If you're not convinced|or even if you are|we have a more elaborate sales pitch on the
+\href{https://nyu.data-bootcamp.com/}{course website}.
 
 There are two sections of this course,
 one for undergrads (ECON-UB.0232) and one for MBA students (ECON-GB.2313).
 The content is the same, but the schedules are different.
 
+\subsubsection*{About the Instructor}
+\href{http://www.waugheconomics.com}{Professor Michael Waugh} \\
+Email: mwaugh@stern.nyu.edu\\
+Office: KMC 7-74\\
+Phone: 212-998-0288\\
+Office hours: TBA, Monday and Wednesday.
 
-\section*{Requirements}
+\subsubsection*{Where and When}
+Monday and Wednesday \\
+%Section \#2: TISCH UC24, 3:30PM - 4:45PM
+
+
+\subsection*{Requirements}
 
 There are no prerequisites.
 {\bf We welcome students with no prior programming experience\/}
