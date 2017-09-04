@@ -1,16 +1,19 @@
-\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%% Stock Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{../LaTeX/preamble.tex}
+\input{../LaTeX/undergrad_preamble.tex}
 
-% document starts here
+%%%%%%%%%%%%%%%%%%%%%%Headers and Footers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{\includegraphics[width=0.25\textwidth]{../Figures/stern_black1.pdf}}{}{Data Bootcamp: Three Project Ideas}
+\runningheader{}{}{}
+\runningfooter{}{}{}
+
 \begin{document}
-\parskip=\bigskipamount
-\parindent=0.0in
-\thispagestyle{empty}
-\input{../LaTeX/header.tex}
-
-\bigskip\bigskip
+\bigskip
 \centerline{\Large \bf Topic Outline:  Data + Python}
+\medskip
 \centerline{Revised: \today}
 
 
@@ -19,10 +22,8 @@
 \begin{itemize}
 \item  First-day handouts:  Syllabus, Project Guide, Due Dates
 \item  Today's handouts:  this outline, three ideas (two copies), book chapters, red/green stickers
-\item  All posted on {\it Topic list \& links\/} page of website (except the stickers).
+\item  All posted on website (except the stickers).
 \end{itemize}
-
-
 
 \section*{About the course}
 
@@ -73,11 +74,11 @@
 \begin{itemize}
 \item Required:  practice, exam, project
 \item Google ``nyu data bootcamp''
-\item Website (thanks, Spencer):  \url{http://nyudatabootcamp.github.io/website/}  (bookmark me!)
-\item Book
-\item Topic list \& links
-\item Discussion group
-\item Data page
+\item Website, topic list \& links  (thanks, Spencer):\\ \url{https://nyu.data-bootcamp.com/undergrad_outline/}  (bookmark me!)
+\item Book: \\ \url{https://www.gitbook.com/book/nyudatabootcamp/data-bootcamp/details}
+\item Discussion group: \\ \url{https://groups.google.com/d/forum/databootcamp_fall2017_undergrad}
+\item Data page: \\
+\url{https://nyu.data-bootcamp.com/data/}
 \item GitHub repository:  \url{https://github.com/NYUDataBootcamp/Materials}
 \end{itemize}
 
@@ -87,6 +88,32 @@
 \item After class:  {\bf write} and {\bf read}
 \item Practice
 \item Have fun
+\end{itemize}
+\end{itemize}
+
+\section*{Setting up your Computer}
+\begin{itemize}
+\item Create \verb|Data_Bootcamp| directory/folder on your computer. This is a place for you to save stuff to, work from, etc.  
+\item My style: To keep things simple I do the following
+\begin{itemize}
+\item Find your main hard drive, on PCs typically the ``C'' drive
+\item In the C drive, create a folder called \verb|Data_Bootcamp|
+\item Now if you every have to call this file you know it is \verb|c:\Data_Bootcamp|
+\end{itemize}
+\end{itemize}
+
+\section*{\href{https://github.com}{GitHub}}
+\begin{itemize}
+\item What I will use it for\ldots
+\begin{itemize}
+\item Source of ALL course materials
+\item Place for you to grab materials on the fly. Save files by cut and paste, clever save as, or "Raw" (ask about this)
+\end{itemize}
+\item You need to create an account and email me your username
+\item What you will use it for\ldots
+\begin{itemize}
+\item Post your homework and projects; I will ``pull'' them from there.
+\item Long run: Think of this like an artists portfolio. Here you can post your code and projects and show potential employers, family, friends what you have done.
 \end{itemize}
 \end{itemize}
 
@@ -108,11 +135,9 @@
 \item Environments
 \begin{itemize}
 \item Environments?  (Analogy:  Word is an environment for creating Word docs.)
-%(environment is to program as Word is to Word doc)
 \item Spyder:  classic coding environment with editor and output windows
 \item Jupyter:  environment for creating IPython notebooks, which combine code with text and output
 \end{itemize}
-
 \end{itemize}
 
 
@@ -138,8 +163,6 @@ print(sys.version)
 \item Run test program in Spyder
 \begin{itemize}
 \item Put red sticker on your laptop
-\item Create \verb|Data_Bootcamp| directory/folder on your computer.
-{\bf Raise your hand if you're not sure what that means or how to do it.}
 \item From Launcher, launch Spyder (labelled ``spyder-app'')
 \item Look around (editor, IPython console, Object inspector)
 \item Enter test program in editor (on the left)
@@ -150,34 +173,27 @@ print(sys.version)
 \item Switch to green sticker if it works
 \end{itemize}
 
-\item Run test program in Jupyter
-\begin{itemize}
-\item Put red sticker on your laptop
-\item From Launcher, launch Jupyter (labelled ``ipython-notebook'')
-\item Navigate to \verb|Data_Bootcamp| directory
-\item Open a new IPython notebook (New, Python 3)
-\item Change name from {\tt Untitled} to \verb|bootcamp_test|
-\item Look around (toolbar, menubar, code cells)
-\item Enter test program in code cell
-\item Run program (Cell, Run All)
-\item Look for correct output (last line should be {\tt 3.5.x etc})
-\item Switch to green sticker if it works
-\end{itemize}
+% Not going to talk about Jupyter now...
+%\item Run test program in Jupyter
+%\begin{itemize}
+%\item Put red sticker on your laptop
+%\item From Launcher, launch Jupyter (labelled ``ipython-notebook'')
+%\item Navigate to \verb|Data_Bootcamp| directory
+%\item Open a new IPython notebook (New, Python 3)
+%\item Change name from {\tt Untitled} to \verb|bootcamp_test|
+%\item Look around (toolbar, menubar, code cells)
+%\item Enter test program in code cell
+%\item Run program (Cell, Run All)
+%\item Look for correct output (last line should be {\tt 3.5.x etc})
+%\item Switch to green sticker if it works
+%\end{itemize}
 
 \item Spyder startup summary
 \begin{itemize}
 \item Open by typing Launcher in search box (spotlight on Macs), then choose spyder-app.
 \item Or just type Spyder in search box
 \end{itemize}
-
-\item GitHub summary
-\begin{itemize}
-\item Source of course materials
-\item Save files by cut and paste, clever save as, or "Raw" (ask about this)
 \end{itemize}
-
-\end{itemize}
-
 
 \section*{Practice and review}
 
@@ -197,11 +213,10 @@ Raise your hand if you could use some help.
 Environment & File or Object \\
 \midrule
 MS Word  & Word document  \\
-MS Excel & Excel file     \\
+ & Excel file     \\
 iTunes & \\
 %Typewriter & \\
 Spyder   &                \\
-         & IPython notebook \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -304,84 +319,5 @@ Do they suggest anything else you might explore?
 \end{itemize}
 \end{itemize}
 
-\input{../LaTeX/footer.tex}
-
-
 \end{document}
 
-**Outline**
-
-* Why are we doing this?
-* Install Anaconda
-* Data
-
-**Skills**
-
-Why skills?
-
-* Businesses want people with skills (duh!)
-
-Why code?
-
-* One of the skills businesses value (not the only one)
-* Do things Excel can't do, and do them faster
-
-Why Python?
-
-* User-friendly
-* Broad range of applications
-
-**Overview**
-
-Where we're headed
-
-* Think of a **picture** you'd like to produce -- a "visualization"
-* And about what **data** you'll need
-* And the **coding skills** to get there
-* Examples:  [Gapminder](http://www.gapminder.org/world/) | [cancer screening](http://www.vox.com/2015/10/28/9631500/does-mammography-work) | [Uber in NYC](http://fivethirtyeight.com/features/uber-is-serving-new-yorks-outer-boroughs-more-than-taxis-are/) | [mortality](http://www.pnas.org/content/early/2015/10/29/1518393112.full.pdf) | [earthquake](https://jawbone.com/blog/napa-earthquake-effect-on-sleep/)
-
-http://graphics.wsj.com/infectious-diseases-and-vaccines/
-
-http://www.nytimes.com/interactive/2016/01/07/us/drug-overdose-deaths-in-the-us.html
-
-Philosophy
-
-* Target **coding novices**, no prior experience required or expected
-* **Jump right in** the deep end of the pool, figure it out as we go
-* Not a typical programming course:  cover only those aspects of Python relevant to data work
-
-Rules to live by
-
-* **Don't panic**.  The jargon and concepts will seem mysterious at first, but if you keep with it they'll start to make sense.
-* **One step at a time.**  We'll go as slowly as we need.  Speed is the enemy, it leads to mistakes.
-* **Doing is learning.**  We'll set you up to teach yourself.  If you're stuck, either **ask for help** or practice your **Google fu** and find the answer with Google.
-
-**Prelaunch checklist**
-
-Install Anaconda
-
-* Google "anaconda download"
-* Download installer for **Python 3.5**
-* Run installer
-
-Locate this file in a browser
-
-* Google "nyu data bootcamp" and follow links
-* Or:  type in url at the top
-
-Save today's code file in a handy place
-
-* Create directory/folder \verb|Data_Bootcamp|
-* Click on code link above, then Raw button
-* Save file in `Data_Bootcamp` directory
-
-Launch
-
-* Look for **Launcher** in your programs
-* Start it up (takes a minute)
-* Click on **Spyder** (another minute)
-
-
-\input{../LaTeX/footer.tex}
-
-\end{document}
