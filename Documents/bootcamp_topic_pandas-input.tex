@@ -1,23 +1,28 @@
-\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%% Stock Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{../LaTeX/preamble.tex}
+\input{../LaTeX/undergrad_preamble.tex}
 
-% document starts here
+%%%%%%%%%%%%%%%%%%%%%%Headers and Footers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{\includegraphics[width=0.25\textwidth]{../Figures/stern_black1.pdf}}{}{Data Bootcamp: Pandas 1}
+\runningheader{}{}{}
+\runningfooter{}{}{}
+
 \begin{document}
 \parskip=\bigskipamount
-\parindent=0.0in
-\thispagestyle{empty}
-\input{../LaTeX/header.tex}
 
 \bigskip\bigskip
 \centerline{\Large \bf Topic Outline:  Pandas 1:  Data Input}
+\medskip
 \centerline{Revised: \today}
 
 
 \section*{Materials}
 
 \begin{itemize}
-\item  Today's handouts:  this outline, book chapter, code practice, stickers
+\item  Today's handouts:  this outline
 \item  All posted on {\it Topic outlines \& links\/} page of website (except the stickers).
 \end{itemize}
 
@@ -52,7 +57,7 @@
 \begin{itemize}
 \item Put red sticker on your laptop
 \item Start Spyder
-\item Open blank file \verb|scratch_pad.py| to use in class
+\item Open blank file \verb|bootcamp_pandas1.py| to use in class
 \item For second half:  save Python code file in your \verb|Data_Bootcamp| directory: \\
 GitHub $\Rightarrow$ Code $\Rightarrow$ Python $\Rightarrow$ \verb|bootcamp_pandas-input.py|
 $\Rightarrow$ click on Raw button
@@ -69,11 +74,11 @@ We'll follow the book chapter.
 \begin{itemize}
 \item Packages
 \item Importing packages
-\item Reading internet files
 \item Properties of dataframes
 \item Working with variables
 \item Dataframe methods
 \item Reading files from your computer
+\item Reading internet files
 \item Examples:  Penn World Table, World Economic Outlook, PISA education data, UN population data and
 projections, income by college major
 \item APIs:  FRED, World Bank, Fama-French equity returns
@@ -97,8 +102,8 @@ file \verb|bootcamp_examples.ipynb|.
 \begin{itemize}
 \item Required
 \begin{itemize}
-%\item Review this chapter
-\item Code Practice \#3 \\
+\item Review this chapter
+\item Code Practice \#3 (due October 20th)\\
 Submit hardcopy of code file \\
 Code template:  GitHub $\Rightarrow$ Code $\Rightarrow$ Python
 $\Rightarrow$ \verb|bootcamp_practice_3_template.py|
@@ -112,7 +117,7 @@ $\Rightarrow$ \verb|bootcamp_practice_3_template.py|
 \end{itemize}
 \end{itemize}
 
-\input{../LaTeX/footer.tex}
+%\input{../LaTeX/footer.tex}
 
 \end{document}
 
