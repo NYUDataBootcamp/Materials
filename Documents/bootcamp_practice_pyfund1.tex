@@ -1,20 +1,23 @@
-\documentclass[11pt]{exam}
-
-\input{../LaTeX/preamble.tex}
+\input{../LaTeX/undergrad_preamble.tex}
 
 %\printanswers
 
+%%%%%%%%%%%%%%%%%%%%%%Headers and Footers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
 
-% document starts here
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{\includegraphics[width=0.25\textwidth]{../Figures/stern_black1.pdf}}{}{Data Bootcamp: Python Fundamentals 1 Practice}
+\runningheader{}{}{}
+\runningfooter{}{}{}
+
 \begin{document}
-%\parskip=\bigskipamount
-\parindent=0.0in
-\thispagestyle{empty}
-%\input{../LaTeX/header.tex}
+\parskip=\bigskipamount
 
-\bigskip\bigskip
+\bigskip\bigskip	
 \centerline{\Large \bf Data Bootcamp:  Python Fundamentals 1 Practice}
-\centerline{Revised: \today}
+\medskip		
+\centerline{Revised: \today}	
 
 \medskip
 %{\it Answer each of the questions below.
@@ -30,26 +33,26 @@
 bad_string = 'Sarah's code'
 \end{verbatim}
 
-\item How would you convert the integer i = 1234 to the list 
+\item How would you convert the integer i = 1234 to the list
 \begin{verbatim}
 l = ['1', '2', '3', '4']
 \end{verbatim}
 
-\item Suppose \textbf{year} is a string containing the year of a particular piece of data; for example, 
+\item Suppose \textbf{year} is a string containing the year of a particular piece of data; for example,
 \begin{verbatim}
 year = '2016'
 \end{verbatim}
 How would we construct a \emph{string} for the following year?
 
-\item Suppose we have two variables, $x$ and $y$. How would you switch their values, so that $x$ takes on $y$'s value and $y$ takes on $x$'s? 
+\item Suppose we have two variables, $x$ and $y$. How would you switch their values, so that $x$ takes on $y$'s value and $y$ takes on $x$'s?
 
-\item Set 
+\item Set
 \begin{verbatim}
 name = 'Jones'
 \end{verbatim}
 Use (a) tab completion to find a method that coverts \textbf{name} to upper case (capital) letters and (b) the Object inspector to find out how to use that method.
 
-\item Set 
+\item Set
 \begin{verbatim}
 name = 'Ulysses'
 \end{verbatim}
@@ -61,14 +64,14 @@ long_string = 'salamandroid'
 \end{verbatim}
 Find a method to replace the $a$'s with asterisks.
 
-\item Create the list 
+\item Create the list
 \begin{verbatim}
 list = [1, 2, 3, 4, 5]
 \end{verbatim}
 and using list methods
 \begin{itemize}
 \item reverse the elements of $l$ and print it
-\item remove the number $4$ from $l$ and print it 
+\item remove the number $4$ from $l$ and print it
 \item append the float $1.5$ to $l$ and print it
 \item sort the elements of $l$ and print it
 \end{itemize}
@@ -79,7 +82,7 @@ and using list methods
 \noindent\rule{10cm}{0.4pt}
 \end{center}
 
-\pagebreak 
+\pagebreak
 
 \item You are given the number (as a string) in the following form
 \begin{verbatim}
@@ -88,7 +91,7 @@ number = "32,054.23"
 How would you convert this into a valid float? You should get $32054.23$.
 
 
-\item You are given a name of the form 
+\item You are given a name of the form
 \begin{verbatim}
 firstname_lastname = 'john_doe'
 \end{verbatim}
@@ -108,7 +111,7 @@ l = [..., 1, 2, 3, 4, 5, ...]
 
 \item You are given strings of web domains of the form: $s = $'www.example.com'. You want to strip the \textbf{'www.'} and the \textbf{'.com'}. Use string methods to achieve this.
 
-\item Write a Python program to get the part of the string 
+\item Write a Python program to get the part of the string
 \begin{verbatim}
 link = 'https://play.spotify.com/collection/albums'
 \end{verbatim}
